@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+.background{
+    background: linear-gradient(#ea927c, #ce640c);
+}
+
+main{
+    /* height: 84vh; */
+    height: calc(100vh - 100 px);
+    overflow-y: auto;
+
+}
+
+li{
+    list-style-type: none;
+    float: left;
+    margin-left: 2vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.links{
+    text-decoration: none;
+    color: whitesmoke;
+    border-bottom: 27px;
+    font-size: large;
+    
+}
+
+.links:hover{ 
+    
+    font-weight: 600;
+    color: whitesmoke;
+    font-size: large;
+    padding-right: 0vh;
+    margin-right: 0;
+    border-width: 0;
+}
+
+/* header {
+    background: linear-gradient( #007bff, #28a1c5); /* Cor de fundo do cabeçalho */
+    /*color: #fff;  Cor do texto do cabeçalho */
+    /*padding: 10px;  Espaçamento interno do cabeçalho */
+    /* padding-left: 8rem; */
+    /* text-align: left; Alinhamento centralizado */
+    /* font-family: "Lucida Console", "Courier New", monospace; */
+    /* height: 60px; */
+    /* position: relative; */
+
+
+.logo-container {
+    padding-top: 3.5em;
+    text-align: center; /* Alinhamento centralizado */
+    margin-top: 8px;
+    
+}
+
+.logo {
+    height: 5rem;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    
+    display: inline-block;
+    text-align: left;  /* Alinhamento à esquerda*/
+    color: #3168a3; /* Cor do texto */
+    font-weight:bolder; /* Negrito */
+    margin-top: 1.5rem; /* Espaçamento superior */
+    font-family: 'Oswald', Arial;
+}
+
+.boasvindas{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span{
+    color: #3168a3;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+
+
+footer{
+    color: #ff7518;
+    /* padding-top: 2vh; */
+    font-size: 0.9rem;    
+    font-family: "Lucida Console", "Courier New", monospace;
+    /* height: 10vh; */
+    height: 25px;
+    text-align: center;
+    
+    background-color: black;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+footer p{
+    padding-left: 12%;
+    margin: 0.1rem;
+}
+
+abbr :hover{
+    cursor:default;
+}
+
+.section-inferior{
+    margin-bottom: 25.4vh;
+}
+
+
+
+/* 
+Se alterarmos a medida da fonte na raiz(root), alteramos o tamanho do rem, isso acontece com dispositivos de tamanho menores e maiores, pois 1px em um celular, por exemplo, é menor que 1px de uma televisão. Dessa forma nosso texto se torna mais adaptável a vários tamanhos de telas. */
+
+

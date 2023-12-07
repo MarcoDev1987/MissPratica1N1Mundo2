@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    
+    <!-- Inclua o CSS do Bootstrap via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        body{
+            background: linear-gradient(#ea927c, #ce640c);
+        }
+        main{
+            height: 84vh;
+        }
+        footer{
+            height: 6vh;
+        }
+
+        li{
+            list-style-type: none;
+            float: left;
+            margin-left: 2vh;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .links{
+            text-decoration: none;
+            color: whitesmoke;
+            border-bottom: 27px;
+            font-size: large;
+            
+        }
+
+        .links:hover{ 
+            
+            font-weight: 600;
+            color: whitesmoke;
+            font-size: large;
+            padding-right: 0vh;
+            margin-right: 0;
+            border-width: 0;
+        }
+
+    </style>
+</head>
+<body>
+          
+    <header class="navbar navbar-expand-lg bg-primary bg-gradient" style="height: 10vh;">
+        <div class="container-fluid">
+            
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> -->
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <!-- </button> -->
+            <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> -->
+            <div class="navbar-nav" style="padding-top: 3vh;">
+                <ul>
+                    <li><a class="nav-link links" aria-current="page" href="home.html">Home</a></li>
+                    <li><a class="nav-link links" href="receitas.html">Receitas</a></li>
+                    <li><a class="nav-link active links" href="cadastros.html">Cadastros</a></li>
+                </ul>        
+            </div>
+            </div>
+        
+
+        </div>
+    
+    </header>
+   
+
+    <main>
+        <br><br><br><br>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <h1 class="col m-2"> Efetue seu Cadastro</h1>
+                </div>
+            </div>
+        </section>    
+
+        <section class="formulario">
+            <form action="https://formsubmit.co/desenvolvedoronline.marco@gmail.com" method="POST">
+                <!-- Assunto do email que vou receber quando for feito um cadastro -->
+                <input type="hidden" name="_subject" value="Mais um Cadastro no site Tudo Muito Gostoso!"> 
+                <!-- Mensagem de agradecimento que o usuário recebe por email -->
+                <input type="hidden" name="_autoresponse" value="Obrigado por fazer seu cadastro no site Tudo Muito Gostoso!.   Até a próxima!!!">
+
+                <!-- Página de agradecimento colocar a página que fica disponível no Github -->
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+
+                <div class="container-fluid"></div>
+                    <div class="row m-1 align-items-center">
+                        <label for="inome" class="col-1"> Nome</label> <span class="col-7"><input class="form-control" placeholder="Digite seu nome completo" name='Nome' id="inome" type="text" required> </span>
+                    </div>
+                    <div class="row m-1 align-items-center">
+                        <label for="iemail" class="col-1"> E-mail</label> <span class="col-7"><input class="form-control" type="email" name="email" placeholder="seuemail@email.com.br" id="iemail" required> </span>
+                    </div>
+                    <div class="row m-1 align-items-center">
+                        <label for="icep" class="col-1"> CEP</label><span class="col-4"><input class="form-control" pattern="[0-9]{5}-?[0-9]{3}" placeholder="XXXXX-XXX" name="cep" id="icep" required> </span>
+                    </div>
+                    <div class="row m-1 align-items-center">
+                        <label for="irua" class="col-1"> Rua</label> <span class="col-7"><input class="form-control" type="text" placeholder="Nome da rua" name="rua" id="irua" required> </span>
+                    </div>
+                    <div class="row m-1 align-items-center">
+                        <label for="inumero" class="col-1"> Nº</label> <span class="col-2"><input class="form-control" placeholder="Número" type="number" name="numero" id="inumero" required> </span>
+                        <label for="icomplemento" class="col-1">Complemento</label> <span class="col-4"><input class="form-control" type="text" name="complemento" placeholder="casa, apt, etc.." id="icomplemento"> </span>
+                    </div>
+                    <div class="row m-1 align-items-center">
+                        <label for="icidade" class="col-1"> Cidade</label> <span class="col-5"><input class="form-control" placeholder="Nome da sua cidade" type="text" name="cidade" id="icidade" required> </span>
+                        <label for="iuf" class="col-1"> UF</label> <span class="col-1"><input class="form-control"  pattern="[A-Z]{2}" placeholder="SP, RJ..." name="uf" id="iuf" required> </span>
+                       
+                        <label class="col-1"></label><input class="col-1 btn bg-dark text-white" type="submit" value="Cadastrar">
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+    
+    
+    <footer class="bg-dark text-warning">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-4 align-self-end">Todos os direitos reservados à MarcoMaier2023&copy;</div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

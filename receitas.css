@@ -1,0 +1,63 @@
+main{
+    overflow-y: scroll;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.1rem;
+    width: 100%;
+    margin-bottom: 1.6vh;
+}
+
+.box{
+    flex: 1;
+    background-color:rgb(219, 219, 61);
+    margin: 0.5rem;    
+    max-width: 22rem;
+    min-width: 22rem;
+    max-height: 87vh;    
+}
+
+
+
+.titulo{
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 0.2rem;
+    
+}
+
+.imagem{
+    text-align: center;
+    width: 20rem;
+    max-height: 12rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.itens{
+    margin-bottom: 0.3rem;
+}
+
+hr{
+    width: 95%;
+    margin: auto!important;
+    background-color: black;
+    min-height: 0.2rem;
+    max-height: 0.3rem;
+}
+.preparo{
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+    margin-bottom: 0rem;
+}
+
+
+abbr :hover{
+    cursor:default;
+}
+
+
+/* 
+Se alterarmos a medida da fonte na raiz(root), alteramos o tamanho do rem, isso acontece com dispositivos de tamanho menores e maiores, pois 1px em um celular, por exemplo, é menor que 1px de uma televisão. Dessa forma nosso texto se torna mais adaptável a vários tamanhos de telas. */
